@@ -16,7 +16,7 @@ class Post extends React.Component {
             backgroundImage: `url(${this.props.post.imageUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            paddingBottom: '100%',
+            // paddingBottom: '100%',
           }}
         />
         <div className='flex items-center black-80 fw3 description'>
