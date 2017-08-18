@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { gql, graphql } from 'react-apollo'
+import './styles.css';
 
 class Post extends React.Component {
 
@@ -15,11 +16,10 @@ class Post extends React.Component {
           style={{
             backgroundImage: `url(${this.props.post.imageUrl})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            // paddingBottom: '100%',
+            backgroundPosition: 'center'
           }}
         />
-        <div className='flex items-center black-80 fw3 description'>
+        <div className='post-description'>
           {this.props.post.description}
         </div>
       </Link>

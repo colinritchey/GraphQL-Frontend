@@ -1,0 +1,10 @@
+/*flex items-center black-80 fw3 description*/
+.post-description {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10%;
+}
