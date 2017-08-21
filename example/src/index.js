@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-import ListPage from './components/ListPage'
+import ListPage from './components/ListPage/ListPage'
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo'

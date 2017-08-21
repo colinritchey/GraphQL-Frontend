@@ -8,15 +8,13 @@ class Post extends React.Component {
   render() {
     return (
       <Link
-        className='bg-white ma3 box post flex flex-column no-underline br2'
+        className='post-link'
         to={`/post/${this.props.post.id}`}
       >
         <div
-          className='image'
+          className='post-image'
           style={{
-            backgroundImage: `url(${this.props.post.imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundImage: `url(${this.props.post.imageUrl})`
           }}
         />
         <div className='post-description'>
