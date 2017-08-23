@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Post from '../Post/Post'
+import AddPost from './AddPost/AddPost'
 import { gql, graphql } from 'react-apollo'
 import './styles.css'
 
@@ -33,17 +34,7 @@ class ListPage extends React.Component {
     return (
       <div className='listPage-container'>
         <div className='post-list'>
-          <Link
-            to='/create'
-            className='ma3 box new-post br2 flex flex-column items-center justify-center ttu fw6 f20 black-30 no-underline'
-          >
-            <img
-              src={require('../../assets/plus.svg')}
-              alt=''
-              className='plus mb3'
-            />
-            <div>New Post</div>
-          </Link>
+          <AddPost />
           {this.props.data.allPosts.map(post => (
             <Post
               key={post.id}

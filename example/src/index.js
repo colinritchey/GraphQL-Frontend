@@ -22,7 +22,7 @@ const client = new ApolloClient({networkInterface})
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
-      <div>
+      <div className='main-container'>
         <Route exact path='/' component={ListPage} />
       </div>
     </Router>
