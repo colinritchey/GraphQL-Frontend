@@ -19,7 +19,6 @@ class ListPage extends React.Component {
         <div className='loading'>
           <div>
             Loading
-            (from {process.env.REACT_APP_GRAPHQL_ENDPOINT})
           </div>
         </div>
       )

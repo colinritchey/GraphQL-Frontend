@@ -5,6 +5,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 import ListPage from './components/ListPage/ListPage'
+import CreatePost from './components/CreatePost/CreatePost'
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo'
@@ -24,6 +25,7 @@ ReactDOM.render(
     <Router>
       <div className='main-container'>
         <Route exact path='/' component={ListPage} />
+        <Route exact path='/create' component={CreatePost} />
       </div>
     </Router>
   </ApolloProvider>,

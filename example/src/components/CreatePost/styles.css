@@ -1,0 +1,34 @@
+.create-container{
+  display: flex;
+  flex-direction: column;
+
+  height: 500px;
+  align-items: center;
+  /*justify-content: space-evenly;*/
+}
+
+.create-container > *{
+  margin-top: 50px;
+}
+
+.create-container label{
+
+}
+
+.create-container input[type='text']{
+  font-size: 16px;
+  margin-left: 10px;
+  width: 250px;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid lightgrey;
+}
+
+.create-container textarea {
+  width: 500px;
+}
+
+.create-container img {
+  max-width: 300px;
+  max-height: 300px;
+}
