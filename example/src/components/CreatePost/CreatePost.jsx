@@ -11,9 +11,16 @@ class CreatePost extends React.Component {
 
     this.state = {
       imageUrl: '',
-      description: '',
-      name: ''
+      description: ''
+      // name: ''
     }
+  }
+
+  handlePost = async () => {
+    const {description, imageUrl} = this.state
+    await this.props.addPost({variables: {description, imageUrl}})
+
+    // window.location.pathname = '/'
   }
 
   render(){
@@ -34,13 +41,6 @@ class CreatePost extends React.Component {
           />
         </label>
 
-        <label>Name:
-          <input
-            type='text'
-            value={this.state.name}
-            onChange={(e) => this.setState({name: e.target.value})}
-          />
-        </label>
 
         <label>Description:
           <input
@@ -49,6 +49,10 @@ class CreatePost extends React.Component {
             onChange={(e) => this.setState({description: e.target.value})}
             />
         </label>
+
+        <a
+          className='submit-button'
+          onClick={this.handlePost}>Submit</a>
 
       </div>
     )

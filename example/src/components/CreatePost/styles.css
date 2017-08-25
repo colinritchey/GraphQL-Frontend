@@ -31,4 +31,22 @@
 .create-container img {
   max-width: 300px;
   max-height: 300px;
+  border-style: double;
+  border-color: grey;
+}
+
+button {
+  padding: 0px;
+}
+
+.submit-button{
+  text-align: center;
+  color: #6db16d;
+  border: 2px solid #6db16d;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: transparent;
+  width: 100px;
+  height: 300px;
+  font-size: 15px;
 }
