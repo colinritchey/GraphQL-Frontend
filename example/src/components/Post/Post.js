@@ -6,15 +6,21 @@ import './styles.css';
 class Post extends React.Component {
 
   render() {
+    let addOn = '';
+
+    if(!this.props.post.imageUrl.includes('http://bit.ly')){
+      addOn = '.jpg'
+    }
+
     return (
       <Link
         className='post-link'
         to={`/post/${this.props.post.id}`}
       >
-        <div
+        <img
           className='post-image'
           style={{
-            backgroundImage: `url(${this.props.post.imageUrl})`
+            backgroundImage: `url(${this.props.post.imageUrl}${addOn})`
           }}
         />
         <div className='post-description'>

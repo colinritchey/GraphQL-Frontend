@@ -49,4 +49,5 @@ button {
   width: 100px;
   height: 300px;
   font-size: 15px;
+  cursor: pointer;
 }
