@@ -29,7 +29,6 @@ class Post extends React.Component {
       </Link>
     )
   }
-  //<span className='red f6 pointer dim' onClick={this.handleDelete}>Delete</span>
 
   // not currently used.
   // handleDelete = async () => {

@@ -24,12 +24,6 @@ class ListPage extends React.Component {
       )
     }
 
-    // let blurClass = ''
-    //
-    // if (this.props.location.pathname !== '/') {
-    //   blurClass = ' blur'
-    // }
-
     return (
       <div className='listPage-container'>
         <div className='post-list'>

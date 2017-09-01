@@ -5,9 +5,9 @@ import {withRouter} from 'react-router-dom'
 import './styles.css';
 
 class DetailPost extends React.Component {
-  // constructor(props){
-  //   super(props);
-  // }
+  constructor(props){
+    super(props);
+  }
 
 
   render() {
@@ -23,7 +23,6 @@ class DetailPost extends React.Component {
       const {Post} = this.props.data
 
       let addOn = '';
-      // debugger;
 
       if(!Post.imageUrl.includes('http://bit.ly')){
         addOn = '.jpg'
@@ -45,7 +44,6 @@ class DetailPost extends React.Component {
       )
     }
   }
-  //<span className='red f6 pointer dim' onClick={this.handleDelete}>Delete</span>
 
   // not currently used.
   // handleDelete = async () => {
@@ -72,10 +70,6 @@ const PostQuery = gql`
   }
 `
 
-// update w/ react-router v4 url params api
-//
-// see documentation on computing query variables from props in wrapper
-// http://dev.apollodata.com/react/queries.html#options-from-props
 const DetailPostWithData = graphql(PostQuery, {
   options: ({match}) => ({
     variables: {

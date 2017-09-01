@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom'
 import { gql, graphql } from 'react-apollo'
 
-// import { Link } from 'react-router-dom'
 import './styles.css'
 
 class CreatePost extends React.Component {
@@ -12,7 +11,6 @@ class CreatePost extends React.Component {
     this.state = {
       imageUrl: '',
       description: ''
-      // name: ''
     }
   }
 
@@ -20,7 +18,6 @@ class CreatePost extends React.Component {
     const {description, imageUrl} = this.state
     await this.props.addPost({variables: {description, imageUrl}})
 
-    // window.location.pathname = '/'
   }
 
   render(){
@@ -74,5 +71,3 @@ const addMutation = gql`
 const PageWithMutation = graphql(addMutation, {name: 'addPost'})(CreatePost)
 
 export default withRouter(PageWithMutation)
-
-// export default CreatePost;
