@@ -14,7 +14,7 @@ class Post extends React.Component {
 
     return (
       <Link
-        className='post-link'
+        className='post-link-item'
         to={`/post/${this.props.post.id}`}
       >
         <img

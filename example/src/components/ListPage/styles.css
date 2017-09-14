@@ -1,3 +1,9 @@
+.barchart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .loading {
   display: flex;
   width: 100%;
@@ -16,7 +22,8 @@
 .post-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 80%;
+  background-color: lightgrey;
 }
