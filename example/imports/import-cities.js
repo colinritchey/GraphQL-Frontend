@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 const { Lokka } = require('lokka');
 const { Transport } = require('lokka-transport-http');
 
@@ -18,15 +20,76 @@ const createCity = async(city) => {
   return result.city.id;
 }
 
-const createCitys = async(rawCity) => {
-  return await Promise.all(rawCity.map(createCity))
+const createSpot = async(spot) => {
+  // const jsonString = await JSON.stringify(spot.geolocation);
+  let result = await client.mutate(`{
+    spot: createSpot(
+        name: "${spot.name}",
+        image: "${spot.image}",
+        longitude: ${spot.longitude},
+        latitude: ${spot.latitude}
+      ) {
+        id
+      }
+    }`);
+
+  console.log('result', result);
+
+  return result.spot.id;
+}
+
+const connectCitysAndSpotsMutation = (spotId, cityId) => (
+  client.mutate(`{
+    addToSpotOnCity(spotsSpotId: "${spotId}" cityCityId: "${cityId}") {
+      cityCity {
+        id
+      }
+    }
+  }`)
+)
+
+const createCitys = async(rawCities) => {
+  let cityIds = await Promise.all(rawCities.map(createCity))
+
+  return _.zipObject(rawCities.map(city => city.id), cityIds)
+}
+
+const createSpots = async(rawSpots) => {
+  let spotIds = await Promise.all(rawSpots.map(createSpot))
+
+  return _.zipObject(rawSpots.map(spot => spot.id), spotIds)
 }
 
 const main = async() => {
-  const rawCity = require('./cities.json')
+  const rawCities = require('./cities.json')
 
-  const movieIds = await createCitys(rawCity)
-  console.log(`Created ${movieIds.length} movies`)
+  const allSpots = _.chain(rawCities)
+    .flatMap(rawCity => rawCity.spots)
+    .uniqBy(spot => spot.id)
+    .value()
+
+  // console.log('allSpots', allSpots);
+
+  const spotIds = await createSpots(allSpots)
+  console.log(`Created ${spotIds.length} spots`)
+
+  const cityIds = await createCitys(rawCities)
+  console.log(`Created ${cityIds.length} cities`)
+
+  // connect citys and spots
+  const mutations = _.chain(rawCities)
+    .flatMap((rawCity) => {
+      const newSpotIds = rawCity.spots.map((spot) => spotIds[spot.id])
+      const newCityId = cityIds[rawCity.id]
+
+      return newSpotIds.map((newSpotId) => ({newSpotId, newCityId}))
+    })
+    .map(({newSpotId, newCityId}) => connectCitysAndSpotsMutation(newSpotId, newCityId))
+    .value()
+
+  await Promise.all(mutations)
+  console.log(`Created ${mutations.length} edges between spots and citys`)
+
 }
 
 main().catch((e) => console.error(e))

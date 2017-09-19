@@ -2,11 +2,37 @@
   {
     "id": "tt0078632",
     "name": "San Francisco",
-    "image": "http://www.sirfrancisdrake.com/images/1700-960/sir-francis-drake-hotel-downtown-san-francisco-01a2d1c1.jpg"
+    "image": "http://www.sirfrancisdrake.com/images/1700-960/sir-francis-drake-hotel-downtown-san-francisco-01a2d1c1.jpg",
+    "spots": [
+      {
+        "id": "spot-1-sf",
+        "name": "spot 1",
+        "image": "sample image 1",
+        "latitude": 13.451,
+        "longitude": 90.231
+      },
+      {
+        "id": "spot-2-sf",
+        "name": "spot 2",
+        "image": "sample image 2",
+        "latitude": 13.452,
+        "longitude": 90.232
+      }
+    ]
+
   },
   {
     "id": "tt0079531",
     "name": "Oakland",
-    "image": "https://en.wikipedia.org/wiki/Oakland,_California#/media/File:OAKLAND,_CA,_USA_-_Skyline_and_Bridge.JPG"
+    "image": "https://en.wikipedia.org/wiki/Oakland,_California#/media/File:OAKLAND,_CA,_USA_-_Skyline_and_Bridge.JPG",
+    "spots": [
+      {
+        "id": "spot-3-oak",
+        "name": "spot 3",
+        "image": "sample image 1",
+        "latitude": 13.453,
+        "longitude": 90.233
+      }
+    ]
   }
 ]
