@@ -1,16 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { gql, graphql } from 'react-apollo'
+// import { gql, graphql } from 'react-apollo'
 import './styles.css';
 
 class City extends React.Component {
 
   render() {
-    let addOn = '';
-
-    // if(!this.props.city.image.includes('http://bit.ly')){
-    //   addOn = '.jpg'
-    // }
 
     return (
       <Link
@@ -18,9 +13,10 @@ class City extends React.Component {
         to={`/city/${this.props.city.id}`}
       >
         <img
+          alt=''
           className='city-image'
           style={{
-            backgroundImage: `url(${this.props.city.image}${addOn})`
+            backgroundImage: `url(${this.props.city.image})`
           }}
         />
         <div className='city-description'>
@@ -37,14 +33,14 @@ class City extends React.Component {
   // }
 }
 
-const deleteMutation = gql`
-  mutation deleteCity($id: ID!) {
-    deleteCity(id: $id) {
-      id
-    }
-  }
-`
-
-const CityWithMutation = graphql(deleteMutation)(City)
+// const deleteMutation = gql`
+//   mutation deleteCity($id: ID!) {
+//     deleteCity(id: $id) {
+//       id
+//     }
+//   }
+// `
+//
+// const CityWithMutation = graphql(deleteMutation)(City)
 
 export default City

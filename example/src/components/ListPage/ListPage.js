@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 import City from '../City/City'
 import AddCity from './AddCity/AddCity'

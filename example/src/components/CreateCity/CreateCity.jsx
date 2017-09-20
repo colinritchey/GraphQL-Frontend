@@ -27,6 +27,7 @@ class CreateCity extends React.Component {
     return (
       <div className='create-container'>
         <img
+          alt=''
           src={imageLink}
         />
 
