@@ -1,3 +1,9 @@
+/*
+  run this line to upload data to graph.cool, currently need to delete old (todo: update instead)
+
+  $ node --harmony-async-await import-cities.js
+*/
+
 const _ = require('lodash')
 
 const { Lokka } = require('lokka');
@@ -21,7 +27,6 @@ const createCity = async(city) => {
 }
 
 const createSpot = async(spot) => {
-  // const jsonString = await JSON.stringify(spot.geolocation);
   let result = await client.mutate(`{
     spot: createSpot(
         name: "${spot.name}",
@@ -32,8 +37,6 @@ const createSpot = async(spot) => {
         id
       }
     }`);
-
-  console.log('result', result);
 
   return result.spot.id;
 }

@@ -19,7 +19,7 @@
   justify-content: center;
 }
 
-.post-list {
+.city-list {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

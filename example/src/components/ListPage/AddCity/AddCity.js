@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import './styles.css'
 
-class AddPost extends React.Component {
+class AddCity extends React.Component {
   render(){
     return (
       <Link
@@ -14,10 +14,10 @@ class AddPost extends React.Component {
           alt=''
           className='plus mb3'
         />
-        <div>New Post</div>
+      <div>New City</div>
       </Link>
     )
   }
 }
 
-export default AddPost;
+export default AddCity;

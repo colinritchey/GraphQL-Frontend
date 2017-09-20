@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import Post from '../Post/Post'
-import AddPost from './AddPost/AddPost'
+import City from '../City/City'
+import AddCity from './AddCity/AddCity'
 import BarChart from '../BarChart/BarChart'
 
 import { gql, graphql } from 'react-apollo'
@@ -27,6 +27,8 @@ class ListPage extends React.Component {
       )
     }
 
+    console.log(this.props.data.allCities)
+
     return (
       <div>
         <div className='barchart'>
@@ -34,12 +36,12 @@ class ListPage extends React.Component {
         </div>
 
         <div className='listPage-container'>
-          <div className='post-list'>
-            <AddPost />
-            {this.props.data.allPosts.map(post => (
-              <Post
-                key={post.id}
-                post={post}
+          <div className='city-list'>
+            <AddCity />
+            {this.props.data.allCities.map(city => (
+              <City
+                key={city.id}
+                city={city}
                 refresh={() => this.props.data.refetch()}
               />
             ))}
@@ -51,10 +53,11 @@ class ListPage extends React.Component {
   }
 }
 
-const FeedQuery = gql`query allPosts {
-  allPosts(orderBy: createdAt_DESC) {
+const FeedQuery = gql`query allCities {
+  allCities(orderBy: createdAt_DESC) {
     id
-    imageUrl
+    image
+    name
     description
   }
 }`

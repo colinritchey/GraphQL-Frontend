@@ -1,27 +1,25 @@
-.post-description {
+.city-description {
   display: flex;
   flex-direction: column;
   color: black;
   font-size: 18px;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 
-.post-container {
+.city-link-item {
   display: flex;
   flex-direction: column;
+
   width: 300px;
   text-decoration: none;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px;
 }
 
-.detailpost-image {
-  width: 300px;
-  height: 300px;
+.city-image {
   background-size: cover;
   background-position: center;
-  /*border-radius: 25px;*/
+  padding-bottom: 100%;
+  border-radius: 25px;
 }

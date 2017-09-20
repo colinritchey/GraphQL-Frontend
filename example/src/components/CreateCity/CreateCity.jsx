@@ -4,7 +4,7 @@ import { gql, graphql } from 'react-apollo'
 
 import './styles.css'
 
-class CreatePost extends React.Component {
+class CreateCity extends React.Component {
   constructor(props){
     super(props);
 
@@ -14,9 +14,9 @@ class CreatePost extends React.Component {
     }
   }
 
-  handlePost = async () => {
+  handleCity = async () => {
     const {description, imageUrl} = this.state
-    await this.props.addPost({variables: {description, imageUrl}})
+    await this.props.addCity({variables: {description, imageUrl}})
 
   }
 
@@ -49,7 +49,7 @@ class CreatePost extends React.Component {
 
         <a
           className='submit-button'
-          onClick={this.handlePost}>Submit</a>
+          onClick={this.handleCity}>Submit</a>
 
       </div>
     )
@@ -59,15 +59,15 @@ class CreatePost extends React.Component {
 
 
 const addMutation = gql`
-  mutation addPost($description: String!, $imageUrl: String!) {
-    createPost(description: $description, imageUrl: $imageUrl) {
+  mutation addCity($description: String!, $imageUrl: String!) {
+    createCity(description: $description, image: $imageUrl) {
       id
       description
-      imageUrl
+      image
     }
   }
 `
 
-const PageWithMutation = graphql(addMutation, {name: 'addPost'})(CreatePost)
+const PageWithMutation = graphql(addMutation, {name: 'addCity'})(CreateCity)
 
 export default withRouter(PageWithMutation)
