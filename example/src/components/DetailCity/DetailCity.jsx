@@ -1,6 +1,7 @@
 import React from 'react'
 import { gql, graphql } from 'react-apollo'
 import { withRouter } from 'react-router-dom'
+import GoogleApiWrapper from '../MapContainer/MapContainer'
 import './styles.css';
 
 class DetailCity extends React.Component {
@@ -23,6 +24,7 @@ class DetailCity extends React.Component {
 
       return (
         <div className='city-container'>
+          <GoogleApiWrapper/>
           <img
             alt=''
             className='detailcity-image'
