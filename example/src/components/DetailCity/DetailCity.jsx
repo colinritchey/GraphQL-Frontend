@@ -24,7 +24,7 @@ class DetailCity extends React.Component {
 
       return (
         <div className='city-container'>
-          <GoogleApiWrapper/>
+          <GoogleApiWrapper markers={City.spots}/>
           <img
             alt=''
             className='detailcity-image'
@@ -54,6 +54,8 @@ const CityQuery = gql`
       spots {
         id
         name
+        latitude
+        longitude
       }
     }
   }
