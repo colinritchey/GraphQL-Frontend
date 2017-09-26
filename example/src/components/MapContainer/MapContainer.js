@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleMap, Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 import './styles.css';
 
@@ -13,10 +13,12 @@ export class MapContainer extends React.Component {
       markers: this.props.markers
     }
 
-    // binding this to event-handler functions
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this);
+    // this.handleOnClick = this.handleOnClick.bind(this);
   }
+
+  // handleOnClick()
 
   onMarkerClick(props, marker, e) {
     this.setState({
@@ -24,6 +26,9 @@ export class MapContainer extends React.Component {
       activeMarker: marker,
       showingInfoWindow: true
     });
+    // console.log('props: ', props);
+    // console.log('e: ', e);
+    this.props.selectMarker(props.marker)
   }
 
   onMapClicked(props) {
@@ -43,7 +48,8 @@ export class MapContainer extends React.Component {
         <Map
             google={this.props.google}
             onClick={this.onMapClicked}
-            center={{ lat: firstMarker.latitude, lng: firstMarker.longitude }}>
+            center={{ lat: firstMarker.latitude,
+              lng: firstMarker.longitude }}>
 
           {this.state.markers.map((m) => {
             return(
@@ -51,7 +57,8 @@ export class MapContainer extends React.Component {
                 key={m.id}
                 position={{ lat: m.latitude, lng: m.longitude }}
                 onClick={this.onMarkerClick}
-                name={m.name} />
+                name={m.name}
+                marker={m} />
             )
           })}
 

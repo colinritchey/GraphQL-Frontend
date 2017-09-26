@@ -25,3 +25,8 @@
   background-position: center;
   /*border-radius: 25px;*/
 }
+
+.map-spot-container{
+  display: flex;
+  justify-content: space-between;
+}
