@@ -14,7 +14,6 @@ class DetailCity extends React.Component {
 
   selectMarker(id){
     this.setState({ currentMarker: id });
-    console.log('current: ', this.state.currentMarker);
   }
 
   render() {

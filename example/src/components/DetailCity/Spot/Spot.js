@@ -33,6 +33,4 @@ class Spot extends React.Component {
   }
 }
 
-export default Spot
-
-// export default Spot;
+export default Spot;

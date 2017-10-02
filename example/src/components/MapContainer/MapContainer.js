@@ -15,10 +15,8 @@ export class MapContainer extends React.Component {
 
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this);
-    // this.handleOnClick = this.handleOnClick.bind(this);
   }
 
-  // handleOnClick()
 
   onMarkerClick(props, marker, e) {
     this.setState({
@@ -26,8 +24,6 @@ export class MapContainer extends React.Component {
       activeMarker: marker,
       showingInfoWindow: true
     });
-    // console.log('props: ', props);
-    // console.log('e: ', e);
     this.props.selectMarker(props.marker)
   }
 
