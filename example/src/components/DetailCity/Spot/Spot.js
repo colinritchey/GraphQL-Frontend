@@ -14,12 +14,19 @@ class Spot extends React.Component {
         <div className='spot-container'>
           <img
             className='spot-image'
-            style={{
-              backgroundImage: `url(${this.props.spot.image})`
-            }}
+            src={this.props.spot.image}
             />
           <div className='spot-name'>
             {this.props.spot.name}
+          </div>
+          <div>
+            Rating: ...
+          </div>
+          <div>
+            Pricing:
+            regular: ...
+            latte: ...
+            mocha: ...
           </div>
         </div>
       )

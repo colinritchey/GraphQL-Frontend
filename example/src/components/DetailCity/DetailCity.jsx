@@ -3,6 +3,7 @@ import { gql, graphql } from 'react-apollo'
 import { withRouter } from 'react-router-dom'
 import GoogleApiWrapper from '../MapContainer/MapContainer'
 import Spot from './Spot/Spot'
+import { LocationItem } from './LocationItem/LocationItem';
 import './styles.css';
 
 class DetailCity extends React.Component {
@@ -30,24 +31,21 @@ class DetailCity extends React.Component {
 
       return (
         <div className='city-container'>
-          <div className='map-spot-container'>
-            <GoogleApiWrapper
-              markers={City.spots}
-              selectMarker={this.selectMarker}/>
-            <Spot spot={this.state.currentMarker}/>
-          </div>
-          <img
-            alt=''
-            className='detailcity-image'
-            style={{
-              backgroundImage: `url(${City.image})`
-            }}
-
-            />
           <div className='city-description'>
             {City.name}
           </div>
-          {City.spots.map((el) => <div key={el.id}>{el.name}</div>)}
+          <div className='map-spot-container'>
+            <GoogleApiWrapper
+              markers={City.spots}
+              marker={this.state.currentMarker}
+              selectMarker={this.selectMarker}/>
+            <Spot spot={this.state.currentMarker}/>
+          </div>
+          <div className='city-location-list'>
+            {City.spots.map((el) =>
+              <LocationItem key={el.id} location={el}/>
+            )}
+          </div>
         </div>
       )
     }
@@ -65,6 +63,7 @@ const CityQuery = gql`
       spots {
         id
         name
+        image
         latitude
         longitude
       }

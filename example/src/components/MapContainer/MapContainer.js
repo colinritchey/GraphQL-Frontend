@@ -6,6 +6,7 @@ import './styles.css';
 export class MapContainer extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       showingInfoWindow: false,
       activeMarker: {},
@@ -16,6 +17,18 @@ export class MapContainer extends React.Component {
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this);
   }
+
+  // componentWillReceiveProps(nextProps){
+  //   console.log('nextProps: ', nextProps);
+  //   let marker = nextProps.marker !== null ? nextProps.markers.find((el) => el.id === nextProps.marker) : {};
+  //   console.log('marker: ', marker);
+  //
+  //   if(this.state.activeMarker !== marker){
+  //     this.setState({
+  //       activeMarker: marker
+  //     })
+  //   }
+  // }
 
 
   onMarkerClick(props, marker, e) {
