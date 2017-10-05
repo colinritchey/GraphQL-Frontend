@@ -8,8 +8,8 @@ class Spot extends React.Component {
   }
 
   render() {
-
     if(this.props.spot){
+      let prices = JSON.parse(this.props.spot.prices);
       return (
         <div className='spot-container'>
           <img
@@ -23,10 +23,10 @@ class Spot extends React.Component {
             Rating: ...
           </div>
           <div>
-            Pricing:
-            regular: ...
-            latte: ...
-            mocha: ...
+            <p>Pricing: </p>
+            <p>regular: {prices.regular}</p>
+            <p>latte: ...</p>
+            <p>mocha: ...</p>
           </div>
         </div>
       )

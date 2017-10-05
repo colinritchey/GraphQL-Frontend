@@ -64,6 +64,7 @@ const CityQuery = gql`
         id
         name
         image
+        prices
         latitude
         longitude
       }
