@@ -14,11 +14,11 @@ class CreateCity extends React.Component {
     }
   }
 
-  handleCity = async () => {
-    const {description, imageUrl} = this.state
-    await this.props.addCity({variables: {description, imageUrl}})
-
-  }
+  // handleCity = async () => {
+  //   const {description, imageUrl} = this.state
+  //   await this.props.addCity({variables: {description, imageUrl}})
+  //
+  // }
 
   render(){
     let imageLink = this.state.imageUrl !== '' ? `${this.state.imageUrl}.jpg` :
@@ -47,10 +47,6 @@ class CreateCity extends React.Component {
             onChange={(e) => this.setState({description: e.target.value})}
             />
         </label>
-
-        <a
-          className='submit-button'
-          onClick={this.handleCity}>Submit</a>
 
       </div>
     )

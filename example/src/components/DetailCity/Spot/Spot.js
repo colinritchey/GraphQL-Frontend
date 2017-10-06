@@ -23,7 +23,7 @@ class Spot extends React.Component {
             Rating: ...
           </div>
           <div>
-            <p>Pricing: </p>
+            <h3>Pricing: </h3>
             <p>regular: {prices.regular}</p>
             <p>latte: ...</p>
             <p>mocha: ...</p>
@@ -33,7 +33,7 @@ class Spot extends React.Component {
     } else  {
       return(
         <div className='spot-container'>
-          none selected
+          <p>Select a location</p>
         </div>
       )
     }
