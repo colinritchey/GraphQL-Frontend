@@ -1,5 +1,6 @@
 import React from 'react';
-import './styles.css';
+// import './styles.css';
+import './spot.less';
 
 class Spot extends React.Component {
   constructor(props){
