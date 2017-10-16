@@ -26,8 +26,6 @@ class ListPage extends React.Component {
       )
     }
 
-    console.log(this.props.data.allCities)
-
     return (
       <div>
         <div className='barchart'>

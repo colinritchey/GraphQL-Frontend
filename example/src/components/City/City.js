@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import { gql, graphql } from 'react-apollo'
-import './styles.css';
+import './styles.less';
 
 class City extends React.Component {
 
@@ -25,22 +24,6 @@ class City extends React.Component {
       </Link>
     )
   }
-
-  // not currently used.
-  // handleDelete = async () => {
-  //   await this.props.mutate({variables: {id: this.props.city.id}})
-  //   this.props.history.replace('/')
-  // }
 }
-
-// const deleteMutation = gql`
-//   mutation deleteCity($id: ID!) {
-//     deleteCity(id: $id) {
-//       id
-//     }
-//   }
-// `
-//
-// const CityWithMutation = graphql(deleteMutation)(City)
 
 export default City
