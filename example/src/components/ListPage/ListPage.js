@@ -5,7 +5,7 @@ import AddCity from './AddCity/AddCity'
 import BarChart from '../BarChart/BarChart'
 
 import { gql, graphql } from 'react-apollo'
-import './styles.css'
+import './styles.less'
 
 class ListPage extends React.Component {
 

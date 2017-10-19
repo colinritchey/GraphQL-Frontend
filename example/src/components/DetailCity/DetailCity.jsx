@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom'
 import GoogleApiWrapper from '../MapContainer/MapContainer'
 import Spot from './Spot/Spot'
 import { LocationItem } from './LocationItem/LocationItem';
-import './styles.css';
+import './styles.less';
 
 class DetailCity extends React.Component {
   constructor(props){
