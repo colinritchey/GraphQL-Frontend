@@ -1,5 +1,4 @@
 import React from 'react';
-// import './styles.css';
 import './spot.less';
 
 class Spot extends React.Component {
@@ -14,6 +13,7 @@ class Spot extends React.Component {
       return (
         <div className='spot-container'>
           <img
+            alt=''
             className='spot-image'
             src={this.props.spot.image}
             />
