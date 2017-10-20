@@ -32,12 +32,13 @@ const createSpot = async(spot) => {
         name: "${spot.name}",
         image: "${spot.image}",
         longitude: ${spot.longitude},
-        latitude: ${spot.latitude}
+        latitude: ${spot.latitude},
+        prices: ${JSON.stringify(spot.prices)}
       ) {
         id
       }
     }`);
-
+  console.log("result: ", result);
   return result.spot.id;
 }
 
