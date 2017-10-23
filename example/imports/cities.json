@@ -6,23 +6,19 @@
     "spots": [
       {
         "id": "spot-1-sf",
-        "name": "spot 1",
-        "image": "sample image 1",
-        "latitude": 13.451,
-        "longitude": 90.231,
-        "prices": {
-          "regular": "1.25"
-        }
+        "name": "Blue Bottle Coffee",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipO3EvosvNyNi-toQg_WJO5Jdl4LmELmCUAZxI-o=w408-h229-k-no",
+        "latitude": 37.782472,
+        "longitude": -122.393092,
+        "prices": {"regular":"1.29","latte":"2.25"}
       },
       {
         "id": "spot-2-sf",
-        "name": "spot 2",
-        "image": "sample image 2",
-        "latitude": 13.452,
-        "longitude": 90.232,
-        "prices": {
-          "regular": "1.28"
-        }
+        "name": "Mazarine Coffee",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipN4Lni4FrkAQrnNF21R4zKdl7NqXibUPaf7H-ki=w408-h306-k-no",
+        "latitude": 37.787424,
+        "longitude": -122.403839,
+        "prices": {"regular":"1.28","latte":"2.25"}
       }
     ]
 
@@ -34,13 +30,11 @@
     "spots": [
       {
         "id": "spot-3-oak",
-        "name": "spot 3",
-        "image": "sample image 1",
-        "latitude": 13.453,
-        "longitude": 90.233,
-        "prices": {
-          "regular": "2.25"
-        }
+        "name": "Coffee Mill",
+        "image": "http://lh5.ggpht.com/-DTyDYoNtmZw/WY8hxrUou6I/AAAAAAAA1J8/ba5vAurmgts1pFCbrohP_fLJxcf1bojVACLIBGAYYCw/",
+        "latitude": 37.813829,
+        "longitude": -122.246847,
+        "prices": {"regular":"1.25","latte":"2.25"}
       }
     ]
   }

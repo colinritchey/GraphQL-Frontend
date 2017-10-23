@@ -9,7 +9,9 @@ class Spot extends React.Component {
 
   render() {
     if(this.props.spot){
-      let prices = JSON.parse(this.props.spot.prices);
+      let stringedPrices = this.props.spot.prices.replace(/'/g, '"');
+
+      let prices = JSON.parse(stringedPrices);
       return (
         <div className='spot-container'>
           <img
