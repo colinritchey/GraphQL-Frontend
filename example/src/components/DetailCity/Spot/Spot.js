@@ -27,9 +27,13 @@ class Spot extends React.Component {
           </div>
           <div>
             <h3>Pricing: </h3>
-            <p>regular: {prices.regular}</p>
-            <p>latte: ...</p>
-            <p>mocha: ...</p>
+              <div className="prices-menu">
+                {Object.keys(prices).map((key) => {
+                  return(
+                    <p key={key}>{key}: {prices[key]}</p>
+                  )
+                })}
+              </div>
           </div>
         </div>
       )
