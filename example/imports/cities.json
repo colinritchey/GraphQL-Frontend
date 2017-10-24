@@ -38,7 +38,7 @@
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/OAKLAND%2C_CA%2C_USA_-_Skyline_and_Bridge.JPG",
     "spots": [
       {
-        "id": "spot-3-oak",
+        "id": "spot-oak-1",
         "name": "Coffee Mill",
         "image": "http://lh5.ggpht.com/-DTyDYoNtmZw/WY8hxrUou6I/AAAAAAAA1J8/ba5vAurmgts1pFCbrohP_fLJxcf1bojVACLIBGAYYCw/",
         "latitude": 37.813829,
@@ -46,6 +46,61 @@
         "prices": {
           "regular":"2.25",
           "latte":"3.25"
+        }
+      },
+      {
+        "id": "spot-oak-2",
+        "name": "Merritt Station Cafe",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNCZ2BqPR_35toYBRCMiClf8-llydSn-FME9x2R=w408-h306-k-no",
+        "latitude": 37.809554,
+        "longitude": -122.249767,
+        "prices": {
+          "regular":"1.15",
+          "latte":"2.50",
+          "mocha":"2.50",
+          "espresso":"1.50",
+          "cappuccino":"2.50"
+        }
+      },
+      {
+        "id": "spot-oak-3",
+        "name": "Perch Coffee House",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMEyHASgy3aAqusD5j0Jgdat13Xb25cBuFFqfhz=w408-h229-k-no",
+        "latitude": 37.808737,
+        "longitude": -122.253075,
+        "prices": {
+          "regular":"2.00",
+          "espresso":"2.25",
+          "latte":"3.15",
+          "mocha":"3.65"
+        }
+      },
+      {
+        "id": "spot-oak-4",
+        "name": "Farley's East",
+        "image": "http://www.farleyscoffee.com/wp-content/uploads/2014/03/interiorEastd.png",
+        "latitude": 37.811076,
+        "longitude": -122.266207,
+        "prices": {
+          "regular":"2.50",
+          "latte":"4",
+          "espresso":"2.50",
+          "mocha":"4.50",
+          "cappuccino":"3.50"
+        }
+      },
+      {
+        "id": "spot-oak-5",
+        "name": "Tierra Mia",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMhiW5xJjaP8KIsUgbQZKFRJXxN_0ty3VSxiRst=w408-h229-k-no",
+        "latitude": 37.809178,
+        "longitude": -122.268438,
+        "prices": {
+          "regular":"2.75",
+          "latte":"2.25",
+          "cappuccino":"2.95",
+          "mocha":"4.75",
+          "expresso":"3.75"
         }
       }
     ]

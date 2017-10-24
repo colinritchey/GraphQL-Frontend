@@ -28,7 +28,7 @@ const createCity = async(city) => {
 
 const createSpot = async(spot) => {
   let newprices = JSON.stringify(spot.prices).replace(/"/g, "'");
-  console.log("newprices: ", newprices);
+  // console.log("newprices: ", newprices);
   let result = await client.mutate(`{
     spot: createSpot(
         name: "${spot.name}",
@@ -40,7 +40,6 @@ const createSpot = async(spot) => {
         id
       }
     }`);
-  console.log("result: ", result);
   return result.spot.id;
 }
 
