@@ -5,7 +5,7 @@
     "image": "http://www.sirfrancisdrake.com/images/1700-960/sir-francis-drake-hotel-downtown-san-francisco-01a2d1c1.jpg",
     "spots": [
       {
-        "id": "spot-1-sf",
+        "id": "spot-sf-1",
         "name": "Blue Bottle Coffee",
         "image": "https://lh5.googleusercontent.com/p/AF1QipO3EvosvNyNi-toQg_WJO5Jdl4LmELmCUAZxI-o=w408-h229-k-no",
         "latitude": 37.791302,
@@ -16,7 +16,7 @@
         }
       },
       {
-        "id": "spot-2-sf",
+        "id": "spot-sf-2",
         "name": "Mazarine Coffee",
         "image": "https://lh5.googleusercontent.com/p/AF1QipN4Lni4FrkAQrnNF21R4zKdl7NqXibUPaf7H-ki=w408-h306-k-no",
         "latitude": 37.787424,
@@ -27,6 +27,47 @@
           "mocha": "6.00",
           "espresso": "3.50",
           "americano": "3.50"
+        }
+      },
+      {
+        "id": "spot-sf-3",
+        "name": "Four Barrel Coffee",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMbsz9vYjllu3EdYzQ8Su_4sAFcR1uXF-Iq5Fkr=w408-h229-k-no",
+        "latitude": 37.766721,
+        "longitude": -122.421887,
+        "prices": {
+          "regular":"3.00",
+          "latte":"4.50",
+          "mocha": "5.00",
+          "espresso": "3.00",
+          "americano": "3.00"
+        }
+      },
+      {
+        "id": "spot-sf-4",
+        "name": "Red Door Coffee",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPbBF58A0AE996kuN5LPRnv5nLzXIZCVxGcjsc_=w408-h544-k-no",
+        "latitude": 37.787199,
+        "longitude": -122.399056,
+        "prices": {
+          "regular":"2.00",
+          "latte":"3.75",
+          "mocha": "4.75",
+          "espresso": "2.50"
+        }
+      },
+      {
+        "id": "spot-sf-5",
+        "name": "Workshop Cafe",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNdmFSsr0XAVTqKYlrFlkMjbt45KU1oBvSkNO7q=w408-h416-k-no",
+        "latitude": 37.790451,
+        "longitude": -122.402383,
+        "prices": {
+          "regular":"2.50",
+          "latte":"4.00",
+          "mocha": "4.50",
+          "espresso": "2.50",
+          "americano": "3.00"
         }
       }
     ]
