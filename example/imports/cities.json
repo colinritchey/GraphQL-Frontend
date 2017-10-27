@@ -145,5 +145,82 @@
         }
       }
     ]
+  },
+  {
+    "id": "tt0089672",
+    "name": "Berkeley",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/UCBerkeleyCampus.jpg",
+    "spots": [
+      {
+        "id": "spot-berk-1",
+        "name": "Sack's Coffee House",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPJyVBWexKkWn_I77c_92ffR9J9T3CGoQriAyFs=w408-h241-k-no",
+        "latitude": 37.861796,
+        "longitude": -122.253316,
+        "prices": {
+          "regular":"1.50",
+          "latte":"2.75",
+          "mocha":"3.10",
+          "espresso":"1.50",
+          "cappuccino":"2.75"
+        }
+      },
+      {
+        "id": "spot-oak-2",
+        "name": "Rasa Cafe",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOY2ZqhTpGz9u2fH-IMp5ENZgdKFuoifFNIlC4h=w408-h306-k-no",
+        "latitude": 37.850903,
+        "longitude": -122.270861,
+        "prices": {
+          "regular":"2.00",
+          "latte":"3.25",
+          "mocha":"2.75",
+          "espresso":"2.25",
+          "cappuccino":"3.00"
+        }
+      },
+      {
+        "id": "spot-oak-3",
+        "name": "Fertile Grounds Cafe",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOAJdy3r5NKM_zkvqOQX6oFGjALVepXljCihUj2=w438-h200-k-no",
+        "latitude": 37.874905,
+        "longitude": -122.268853,
+        "prices": {
+          "regular":"1.65",
+          "espresso":"1.95",
+          "latte":"2.95",
+          "mocha":"3.00",
+          "cappuccino":"2.75",
+        }
+      },
+      {
+        "id": "spot-oak-4",
+        "name": "Caffè Trieste",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNMJGPr7TPGW5xWsGQ-T8HmCHR1Htuf9dlah4df=w408-h229-k-no",
+        "latitude": 37.860848,
+        "longitude": -122.289782,
+        "prices": {
+          "regular":"2.25",
+          "latte":"4.00",
+          "espresso":"2.50",
+          "mocha":"3.00",
+          "cappuccino":"4.00"
+        }
+      },
+      {
+        "id": "spot-oak-5",
+        "name": "Artís Coffee",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPqO1iGGIg8EEyjUwlBv0lBtTf8D6Rt5LZc9GUl=w408-h544-k-no",
+        "latitude": 37.871536,
+        "longitude": -122.300884,
+        "prices": {
+          "regular":"2.00",
+          "latte":"3.75",
+          "cappuccino":"3.50",
+          "mocha":"4.00",
+          "expresso":"2.50"
+        }
+      }
+    ]
   }
 ]
