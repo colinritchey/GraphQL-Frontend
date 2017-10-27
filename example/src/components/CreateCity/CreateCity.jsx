@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom'
 import { gql, graphql } from 'react-apollo'
 
-import './styles.css'
+import './styles.less'
 
 class CreateCity extends React.Component {
   constructor(props){

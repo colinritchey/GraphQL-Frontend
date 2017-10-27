@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import './styles.css'
+import './styles.less'
 
 class AddCity extends React.Component {
   render(){
