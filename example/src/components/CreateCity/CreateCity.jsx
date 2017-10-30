@@ -14,12 +14,6 @@ class CreateCity extends React.Component {
     }
   }
 
-  // handleCity = async () => {
-  //   const {description, imageUrl} = this.state
-  //   await this.props.addCity({variables: {description, imageUrl}})
-  //
-  // }
-
   render(){
     let imageLink = this.state.imageUrl !== '' ? `${this.state.imageUrl}.jpg` :
       require('./placeholder.png');

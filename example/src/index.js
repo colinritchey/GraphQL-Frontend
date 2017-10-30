@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-// import registerServiceWorker from './registerServiceWorker';
+import './index.less';
 
 import ListPage from './components/ListPage/ListPage'
 import CreateCity from './components/CreateCity/CreateCity'
@@ -9,9 +8,6 @@ import DetailCity from './components/DetailCity/DetailCity'
 
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo'
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
 
 const networkInterface = createNetworkInterface({
 // __SIMPLE_API_ENDPOINT__ looks similar to: `https://api.graph.cool/simple/v1/<PROJECT_ID>`
