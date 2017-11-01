@@ -166,7 +166,7 @@
         }
       },
       {
-        "id": "spot-oak-2",
+        "id": "spot-berk-2",
         "name": "Rasa Cafe",
         "image": "https://lh5.googleusercontent.com/p/AF1QipOY2ZqhTpGz9u2fH-IMp5ENZgdKFuoifFNIlC4h=w408-h306-k-no",
         "latitude": 37.850903,
@@ -180,7 +180,7 @@
         }
       },
       {
-        "id": "spot-oak-3",
+        "id": "spot-berk-3",
         "name": "Fertile Grounds Cafe",
         "image": "https://lh5.googleusercontent.com/p/AF1QipOAJdy3r5NKM_zkvqOQX6oFGjALVepXljCihUj2=w438-h200-k-no",
         "latitude": 37.874905,
@@ -194,7 +194,7 @@
         }
       },
       {
-        "id": "spot-oak-4",
+        "id": "spot-berk-4",
         "name": "Caffè Trieste",
         "image": "https://lh5.googleusercontent.com/p/AF1QipNMJGPr7TPGW5xWsGQ-T8HmCHR1Htuf9dlah4df=w408-h229-k-no",
         "latitude": 37.860848,
@@ -208,7 +208,7 @@
         }
       },
       {
-        "id": "spot-oak-5",
+        "id": "spot-berk-5",
         "name": "Artís Coffee",
         "image": "https://lh5.googleusercontent.com/p/AF1QipPqO1iGGIg8EEyjUwlBv0lBtTf8D6Rt5LZc9GUl=w408-h544-k-no",
         "latitude": 37.871536,
@@ -219,6 +219,65 @@
           "cappuccino":"3.50",
           "mocha":"4.00",
           "expresso":"2.50"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tt0099177",
+    "name": "San Leandro",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/San_Leandro_Marina_07830.JPG",
+    "spots": [
+      {
+        "id": "spot-leandro-1",
+        "name": "Sabino's Coffee shop",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipOTIJRwcHHJBheVPBioPUL81VD58c3ytRTl6IVd=w408-h306-k-no",
+        "latitude": 37.729886,
+        "longitude": -122.139108,
+        "prices": {
+          "regular":"2.00",
+          "latte":"3.15",
+          "mocha":"3.40",
+          "espresso":"2.30",
+          "cappuccino":"2.85"
+        }
+      },
+      {
+        "id": "spot-leandro-2",
+        "name": "Zocalo Coffeehouse",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMeYJI20yVvwSff4Y5PmOSUw1nml01znyH6WMz9=w408-h271-k-no",
+        "latitude": 37.733179,
+        "longitude": -122.151008,
+        "prices": {
+          "regular":"2.00",
+          "latte":"3.25",
+          "cappuccino":"3.25"
+        }
+      },
+      {
+        "id": "spot-leandro-3",
+        "name": "Tapioca Express",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPfDM4PW_YFbo1WaYDbbWK25ndhvjVeXPAR69Zp=w408-h229-k-no",
+        "latitude": 37.724059,
+        "longitude": -122.155182,
+        "prices": {
+          "regular":"1.99",
+          "latte":"2.99",
+          "mocha":"2.99",
+          "cappuccino":"2.99",
+        }
+      },
+      {
+        "id": "spot-leandro-4",
+        "name": "Starbucks",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNMJGPr7TPGW5xWsGQ-T8HmCHR1Htuf9dlah4df=w408-h229-k-no",
+        "latitude": 37.860848,
+        "longitude": -122.289782,
+        "prices": {
+          "regular":"2.10",
+          "latte":"2.95",
+          "mocha":"3.45",
+          "cappuccino":"3.75"
         }
       }
     ]
