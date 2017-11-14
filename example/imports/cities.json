@@ -270,9 +270,9 @@
       {
         "id": "spot-leandro-4",
         "name": "Starbucks",
-        "image": "https://lh5.googleusercontent.com/p/AF1QipNMJGPr7TPGW5xWsGQ-T8HmCHR1Htuf9dlah4df=w408-h229-k-no",
-        "latitude": 37.860848,
-        "longitude": -122.289782,
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPfOLWJE142WOwosJ1bB-g79MqHip5VcIMl5t5o=w408-h228-k-no",
+        "latitude": 37.714586,
+        "longitude": -122.141711,
         "prices": {
           "regular":"2.10",
           "latte":"2.95",
