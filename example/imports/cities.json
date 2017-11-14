@@ -281,5 +281,68 @@
         }
       }
     ]
+  },
+  {
+    "id": "tz0094178",
+    "name": "San Jose",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/San_Leandro_Marina_07830.JPG",
+    "spots": [
+      {
+        "id": "spot-jose-1",
+        "name": "Bellano Coffee shop",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNROFLKg08h0n9JcEsiu-8sZEN54u4q1i9i3d6E=w408-h544-k-no",
+        "latitude": 37.336632,
+        "longitude": -121.894307,
+        "prices": {
+          "regular":"2.50",
+          "latte":"4.00",
+          "mocha":"4.75",
+          "espresso":"2.50",
+          "cappuccino":"3.75"
+        }
+      },
+      {
+        "id": "spot-jose-2",
+        "name": "Caffe Frascati",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPuBP1mBpLYELPZceuQYzJM6Frlc58zuGrZ0yRg=w408-h306-k-no",
+        "latitude": 37.331295,
+        "longitude": -121.887136,
+        "prices": {
+          "regular":"1.95",
+          "latte":"3.95",
+          "mocha":"4.55",
+          "espresso":"2.55",
+          "cappuccino":"3.85"
+        }
+      },
+      {
+        "id": "spot-jose-3",
+        "name": "Crema Coffee Co",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipMrX8EqQFqy831dlaSGb57YRSr0NAhHRNG7tyuI=w408-h306-k-no",
+        "latitude": 37.331367,
+        "longitude": -121.908251,
+        "prices": {
+          "regular":"2.00",
+          "latte":"4.10",
+          "mocha":"4.25",
+          "espresso":"2.86",
+          "cappuccino":"3.76",
+        }
+      },
+      {
+        "id": "spot-jose-4",
+        "name": "Vero's Coffee Bar",
+        "image": "https://lh3.googleusercontent.com/proxy/YtXoYhHs1-113WrzuETHbAfIQu14V1YEfrbyLj9hGEhQpwF1tlTHRz8VVPEtMFnOyp6b6OL38THd7N3qt_onfKr-sOE6eAZPW0NpgY9rAMcP5GNluNrCOXjcZ29JGbnT_C38hz3Rh3ajT0VXRF7Ba_LcNrFicsw=w408-h546-k-no",
+        "latitude": 37.330205,
+        "longitude": -121.886388,
+        "prices": {
+          "regular":"3.00",
+          "latte":"4.00",
+          "mocha":"4.50",
+          "espresso":"3.00",
+          "cappuccino":"3.75"
+        }
+      }
+    ]
   }
 ]
