@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { scaleLinear } from 'd3-scale';
+import { scaleLinear, scale } from 'd3-scale';
 import * as d3 from "d3";
 import { max } from 'd3-array';
 import { select } from 'd3-selection';
@@ -21,7 +21,21 @@ class BarChart extends Component {
   createBarChart() {
     const node = this.node
     const dataMax = max(this.props.data)
-    const xScale = scaleLinear().range([0, this.props.size[0]]);
+    const width = this.props.size[0];
+
+    console.log(d3);
+
+    var x = d3.scaleLinear()
+      .domain(["A", "B", "C", "D", "E"])
+      .range([0, 1/4 * width, 2/4 * width, 3/4 * width, width]);
+
+    var xAxis = d3.axisBottom(x)
+      .tickValues(["a", "b", "c", "d", "e"])
+      // .orient("bottom");
+
+    const xScale = scaleLinear().range([0, width]);
+
+    // console.log('xScale: ', scaleLinear().range([0, this.props.size[0]]));
 
     const yScale = scaleLinear()
       .domain([0, dataMax])
