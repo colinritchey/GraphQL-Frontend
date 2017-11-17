@@ -18,3 +18,25 @@
   column-count: 2;
   column-gap: 20px;
 }
+
+.rating {
+  display: inline-block;
+  list-style: none;
+
+
+  li {
+    display: inline-block;
+    background-image: url(//maps.gstatic.com/tactile/omnibox/star-20130618-2x.png);
+    background-size: 37px 13px;
+    width: 13px;
+    height: 13px;
+  }
+
+  li.empty {
+    background-position: -25px 0px;
+  }
+
+  li.half {
+    background-position: -13px 0px;
+  }
+}

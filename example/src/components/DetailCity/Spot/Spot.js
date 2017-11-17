@@ -23,7 +23,13 @@ class Spot extends React.Component {
             {this.props.spot.name}
           </div>
           <div>
-            Rating: ...
+            Rating: <ol className='rating'>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li className='half'></li>
+              <li className='empty'></li>
+            </ol>
           </div>
           <div>
             <h3>Pricing: </h3>

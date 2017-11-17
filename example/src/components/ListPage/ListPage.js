@@ -34,7 +34,6 @@ class ListPage extends React.Component {
 
         <div className='listPage-container'>
           <div className='city-list'>
-            <AddCity />
             {this.props.data.allCities.map(city => (
               <City
                 key={city.id}

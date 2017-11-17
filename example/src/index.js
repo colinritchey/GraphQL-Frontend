@@ -10,7 +10,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {ApolloProvider, createNetworkInterface, ApolloClient} from 'react-apollo'
 
 const networkInterface = createNetworkInterface({
-// __SIMPLE_API_ENDPOINT__ looks similar to: `https://api.graph.cool/simple/v1/<PROJECT_ID>`
   uri: 'https://api.graph.cool/simple/v1/cj4sy952g35gv0179y4icnvaq'
 })
 

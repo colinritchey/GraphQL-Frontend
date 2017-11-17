@@ -35,17 +35,22 @@ class DetailCity extends React.Component {
             {City.name}
           </div>
           <div className='map-spot-container'>
+
             <GoogleApiWrapper
               markers={City.spots}
               marker={this.state.currentMarker}
               selectMarker={this.selectMarker}/>
+
             <Spot spot={this.state.currentMarker}/>
+
           </div>
+
           <div className='city-location-list'>
             {City.spots.map((el) =>
               <LocationItem key={el.id} location={el}/>
             )}
           </div>
+          
         </div>
       )
     }
