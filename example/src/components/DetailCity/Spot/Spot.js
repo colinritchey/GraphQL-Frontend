@@ -1,5 +1,6 @@
 import React from 'react';
 import './spot.less';
+import { Rating } from './Rating';
 
 class Spot extends React.Component {
   constructor(props){
@@ -23,13 +24,7 @@ class Spot extends React.Component {
             {this.props.spot.name}
           </div>
           <div>
-            Rating: <ol className='rating'>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li className='half'></li>
-              <li className='empty'></li>
-            </ol>
+            Rating: <Rating rating={4.5}/>
           </div>
           <div>
             <h3>Pricing: </h3>
