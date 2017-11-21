@@ -23,15 +23,20 @@ class BarChart extends Component {
     const dataMax = max(this.props.data)
     const width = this.props.size[0];
 
-    console.log(d3);
+    let testData = ['SF', 'Oak', 'Berk', 'Pet']
 
-    var x = d3.scaleLinear()
-      .domain(["A", "B", "C", "D", "E"])
-      .range([0, 1/4 * width, 2/4 * width, 3/4 * width, width]);
+    let dataRange = testData.map((el, idx) => (idx+1)*(width/5)+5);
 
-    var xAxis = d3.axisBottom(x)
-      .tickValues(["a", "b", "c", "d", "e"])
-      // .orient("bottom");
+    const x = d3.scaleOrdinal()
+      .domain(testData).range(dataRange)
+      // .range(dataRange);
+
+    const xAxis = d3.axisBottom(x);
+
+    // var x = d3.scaleLinear()
+    //   .domain(["A", "B", "C", "D", "E"])
+    //   .range([0, 1/4 * width, 2/4 * width, 3/4 * width, width]);
+
 
     const xScale = scaleLinear().range([0, width]);
 
@@ -65,7 +70,7 @@ class BarChart extends Component {
 
       .data(this.props.data)
       .style('fill', '#fe9922')
-      .attr('x', (d,i) => i*35)
+      .attr('x', (d,i) => (i+1)*(width/5)+5)
       .attr('y', d => (this.props.size[1] - yScale(d)))
       .attr('height', d => yScale(d))
       .attr('width', 25)
@@ -73,7 +78,7 @@ class BarChart extends Component {
     select(node)
       .append("g")
       .attr("transform", "translate(30," + (this.props.size[1]+30) + ")")
-      .call(d3.axisBottom(xScale));
+      .call(xAxis);
 
     select(node)
       .append("g")
