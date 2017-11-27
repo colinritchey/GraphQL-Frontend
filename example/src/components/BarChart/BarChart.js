@@ -23,24 +23,23 @@ class BarChart extends Component {
     const dataMax = max(this.props.data)
     const width = this.props.size[0];
 
-    let testData = ['SF', 'Oak', 'Berk', 'Pet']
+    let testData = ['San Francisco', 'Oakland', 'Berkeley', 'Petaluma']
 
     let dataRange = testData.map((el, idx) => (idx+1)*(width/5)+5);
 
+    console.log('dataRange: ', dataRange);
+    dataRange.push(300);
+    // dataRange.unshift(0);
+    console.log('dataRange: ', dataRange);
+
     const x = d3.scaleOrdinal()
-      .domain(testData).range(dataRange)
-      // .range(dataRange);
+      .domain(testData)
+      .range(dataRange)
 
     const xAxis = d3.axisBottom(x);
 
-    // var x = d3.scaleLinear()
-    //   .domain(["A", "B", "C", "D", "E"])
-    //   .range([0, 1/4 * width, 2/4 * width, 3/4 * width, width]);
-
-
-    const xScale = scaleLinear().range([0, width]);
-
-    // console.log('xScale: ', scaleLinear().range([0, this.props.size[0]]));
+    const xScale = scaleLinear()
+      .range([0, width]);
 
     const yScale = scaleLinear()
       .domain([0, dataMax])
@@ -53,7 +52,6 @@ class BarChart extends Component {
     select(node)
       .append('g')
       .attr("transform", "translate(30, 30)")
-
       .selectAll('rect')
       .data(this.props.data)
       .enter()
@@ -67,7 +65,6 @@ class BarChart extends Component {
 
     select(node)
       .selectAll('rect')
-
       .data(this.props.data)
       .style('fill', '#fe9922')
       .attr('x', (d,i) => (i+1)*(width/5)+5)
@@ -78,7 +75,8 @@ class BarChart extends Component {
     select(node)
       .append("g")
       .attr("transform", "translate(30," + (this.props.size[1]+30) + ")")
-      .call(xAxis);
+      .call(xAxis)
+      .selectAll("text").attr("transform", "rotate(90)");
 
     select(node)
       .append("g")
@@ -87,7 +85,6 @@ class BarChart extends Component {
 
     select(node)
       .append("text")
-      .attr("transform", "rotate(-90)")
       .attr("y", this.props.size[1] + 50)
       .attr("x", 0 - (this.props.size[0]/2))
       .attr("dy", "1em")
@@ -98,7 +95,7 @@ class BarChart extends Component {
 
   render() {
     return <svg ref={node => this.node = node}
-    width={this.props.size[0] + 100} height={this.props.size[1] + 100}>
+      width={this.props.size[0] + 100} height={this.props.size[1] + 100}>
     </svg>
    }
 }
